@@ -1,0 +1,2 @@
+EEPROM.c:16:6:EPPROM_write	32	static
+EEPROM.c:36:6:EPPROM_READ	32	static

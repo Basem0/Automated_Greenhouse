@@ -1,0 +1,4 @@
+MOTOR.c:17:6:dc_motor_initialize	16	static
+MOTOR.c:23:6:dc_motor_move_right	16	static
+MOTOR.c:29:6:dc_motor_move_left	16	static
+MOTOR.c:34:6:dc_motor_stop	16	static

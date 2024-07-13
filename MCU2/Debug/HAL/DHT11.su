@@ -1,0 +1,2 @@
+DHT11.c:10:6:LM35_Init	16	static
+DHT11.c:14:7:LM35_ReadTemperature	40	static

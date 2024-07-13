@@ -1,0 +1,5 @@
+main.c:22:6:motors_init	4	static
+main.c:70:6:ERROR_HANDLER	4	static
+main.c:80:5:main	8	static
+main.c:90:6:HW_init	8	static
+main.c:117:6:isr_uart	16	static

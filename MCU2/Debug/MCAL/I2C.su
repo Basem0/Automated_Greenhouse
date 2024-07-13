@@ -1,0 +1,11 @@
+I2C.c:25:6:MCAL_I2C_SET_GPIO	24	static
+I2C.c:62:10:GET_flag_status	24	static
+I2C.c:89:6:I2C_init	24	static
+I2C.c:137:6:I2C_Deinit	16	static
+I2C.c:153:6:I2C_Start_BIT	16	static
+I2C.c:161:6:I2C_REPATED_Start_BIT	16	static
+I2C.c:168:6:I2C_Stop_BIT	16	static
+I2C.c:173:6:I2C_WriteADDRESS	16	static
+I2C.c:189:6:I2C_WriteByte	16	static
+I2C.c:195:6:I2C_ReciveByte	16	static
+I2C.c:202:6:I2C_MASTER_Transsimte	24	static

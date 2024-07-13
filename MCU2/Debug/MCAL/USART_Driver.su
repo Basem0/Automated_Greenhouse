@@ -1,0 +1,8 @@
+USART_Driver.c:26:6:MCAL_USART_init	24	static
+USART_Driver.c:116:6:MCAL_USART_Deinit	16	static
+USART_Driver.c:135:6:MCAL_USART_SendData	24	static
+USART_Driver.c:164:10:MCAL_USART_ReciveData	24	static
+USART_Driver.c:202:6:SET_GPIO	24	static
+USART_Driver.c:248:6:USART1_IRQHandler	8	static
+USART_Driver.c:256:6:USART2_IRQHandler	8	static
+USART_Driver.c:264:6:USART3_IRQHandler	8	static
