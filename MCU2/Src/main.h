@@ -15,22 +15,11 @@
 #include "EXTI_Driver.h"
 #include "USART_Driver.h"
 #include "SPI.h"
-#include "I2C.h"
-#include "ADC.h"
 #include "Timer.h"
 #include "Timer1_8.h"
 #include "RCC.h"
 //#include "TFT.h"
-#include "LCD.h"
 #include "MOTOR.h"
-#include "DHT11.h"
-
-//#include "TFT_signs.h"
-
-
-
-
-
 
 
 

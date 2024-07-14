@@ -31,27 +31,27 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Graduation_Project_Finall.elf \
+MCU1.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Graduation_Project_Finall.list \
+MCU1.list \
 
 OBJCOPY_HEX += \
-Graduation_Project_Finall.hex \
+MCU1.hex \
 
 OBJCOPY_BIN += \
-Graduation_Project_Finall.bin \
+MCU1.bin \
 
 
 # All Target
-all: Graduation_Project_Finall.elf secondary-outputs
+all: MCU1.elf secondary-outputs
 
 # Tool invocations
-Graduation_Project_Finall.elf: $(OBJS) $(USER_OBJS) E:\Graduation_Project_Finall\STM32F103CBTX_FLASH.ld
-	arm-none-eabi-gcc -gdwarf-2 -o "Graduation_Project_Finall.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Graduation_Project_Finall\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Graduation_Project_Finall.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MCU1.elf: $(OBJS) $(USER_OBJS) E:\GitHubRepo\Automated_Greenhouse\MCU1\STM32F103CBTX_FLASH.ld
+	arm-none-eabi-gcc -gdwarf-2 -o "MCU1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\GitHubRepo\Automated_Greenhouse\MCU1\STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MCU1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -60,18 +60,18 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Graduation_Project_Finall.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Graduation_Project_Finall.list"
+MCU1.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "MCU1.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Graduation_Project_Finall.hex: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "Graduation_Project_Finall.hex"
+MCU1.hex: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "MCU1.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Graduation_Project_Finall.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "Graduation_Project_Finall.bin"
+MCU1.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "MCU1.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

@@ -144,6 +144,9 @@
     <Compile Include="HAL\LCD\lcd.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="HAL\LCD\lcd_cfg.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>

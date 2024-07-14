@@ -436,10 +436,10 @@ void HAL_LCD_WRITE_STRING(char* string)
 	{
 		count++;
 		HAL_LCD_WRITE_CHAR(*string++);
-		if (count == 16) // Counter reached the end of the first row
+		if (count == 40) // Counter reached the end of the first row
 		{
 			HAL_LCD_GOTO_XY(2, 0); // Line : row num 2 , starts from position 0
-		} else if (count == 32)
+		} else if (count == 80)
 		{
 			HAL_LCD_CLEAR_SCREEN();
 			HAL_LCD_GOTO_XY(1, 0); // go to line 1 , position 0
